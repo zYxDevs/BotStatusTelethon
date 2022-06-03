@@ -10,7 +10,7 @@ jobs:
     steps:
       - uses: jainamoswal/botstatus@main
         env: # all the six environment variables are must, else the action will raise errors.
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # automatically fetched. none of business.
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }} # automatically fetched. none of business.
           BOTS: ${{ secrets.BOTS }} # link of raw file of bots in JSON format. (eg :~ https://gist.githubusercontent.com/jainamoswal/cc331a3d2a4169ab76885c5a1e076d68/raw#file-bots-json)
           SESSION: ${{ secrets.SESSION }} # telethon session string
           APP_ID: ${{ secrets.APP_ID }} # APP ID from my.telegram.org
