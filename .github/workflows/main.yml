@@ -8,7 +8,7 @@ jobs:
     name: Checking bots...
     runs-on: ubuntu-latest
     steps:
-      - uses: jainamoswal/botstatus@main
+      - uses: zyxdevs/botstatusflow@main
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
           BOTS: ${{ secrets.BOTS }}
@@ -16,16 +16,13 @@ jobs:
           APP_ID: ${{ secrets.APP_ID }}
           API_HASH: ${{ secrets.API_HASH }}
           IDS: ${{ secrets.IDS }}
-          FILE_NAME: "README.md"
-          START_MESSAGE: "ℹ️ My Bot Status:\n"
-          END_MESSAGE: "\n⚡️ Powered by @Yoga_CIC"
+          START_MESSAGE: "ℹ️ **My Bot Status:**\n"
+          END_MESSAGE: "\n⚡️ __Powered by @Yoga_CIC__"
           TIME_ZONE: "Asia/Jakarta"
-          TIME_FORMAT: "%H:%M:%S %d/%m/%y"
-          EDIT_IN_REPO: "True"
+          TIME_FORMAT: "%H:%M %d/%m"
+          EDIT_IN_REPO: "false"
           UP_TELEGRAM: "✅"
-          UP_GITHUB: "✅"
           DOWN_TELEGRAM: "❎"
-          DOWN_GITHUB: "❎"
           BULLET: "•"
           COMMIT_MESSAGE: "Updated bot status [Bot]"
         id: bot-status
