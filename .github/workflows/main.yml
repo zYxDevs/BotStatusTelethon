@@ -20,4 +20,5 @@ jobs:
           START_MESSAGE: "My Bot Status:\n"
           END_MESSAGE: "\n⚡️ Powered by @Yoga_CIC"
           TIME_ZONE: "Asia/Jakarta"
+          EDIT_IN_REPO: "True"
         id: bot-status
