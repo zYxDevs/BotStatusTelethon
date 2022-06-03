@@ -24,6 +24,8 @@ jobs:
           EDIT_IN_REPO: "false"
           UP_TELEGRAM: "✅"
           DOWN_TELEGRAM: "❌"
+          UP_GITHUB: "✅"
+          DOWN_GITHUB: "❌"
           BULLET: "•"
           COMMIT_MESSAGE: "Updated bot status [Bot]"
         id: bot-status
