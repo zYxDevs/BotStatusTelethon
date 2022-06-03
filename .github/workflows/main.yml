@@ -1,4 +1,4 @@
-name: ⚡️ Update Status. ⚡️
+name: ⚡️ Update Bot Status ⚡️
 on:
   workflow_dispatch:
   schedule:
@@ -21,4 +21,10 @@ jobs:
           END_MESSAGE: "\n⚡️ Powered by @Yoga_CIC"
           TIME_ZONE: "Asia/Jakarta"
           EDIT_IN_REPO: "True"
+          UP_TELEGRAM: "✅"
+          UP_GITHUB: "✅"
+          DOWN_TELEGRAM: "❎"
+          DOWN_GITHUB: "❎"
+          BULLET: "•"
+          COMMIT_MESSAGE: "Updated bot status [Bot]"
         id: bot-status
