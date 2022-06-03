@@ -11,6 +11,7 @@ jobs:
       - uses: zyxdevs/botstatusflow@main
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+          GITHUB_REPOSITORY: ${{ secrets.GH_REPO }}
           BOTS: ${{ secrets.BOTS }}
           SESSION: ${{ secrets.SESSION }}
           APP_ID: ${{ secrets.APP_ID }}
@@ -22,7 +23,7 @@ jobs:
           TIME_FORMAT: "%H:%M %d/%m"
           EDIT_IN_REPO: "false"
           UP_TELEGRAM: "✅"
-          DOWN_TELEGRAM: "❎"
+          DOWN_TELEGRAM: "❌"
           BULLET: "•"
           COMMIT_MESSAGE: "Updated bot status [Bot]"
         id: bot-status
