@@ -11,7 +11,6 @@ jobs:
       - uses: zyxdevs/botstatusflow@main
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
-          GITHUB_REPOSITORY: ${{ secrets.GH_REPO }}
           BOTS: ${{ secrets.BOTS }}
           SESSION: ${{ secrets.SESSION }}
           APP_ID: ${{ secrets.APP_ID }}
