@@ -2,7 +2,7 @@ name: ⚡️ Update Bot Status ⚡️
 on:
   workflow_dispatch:
   schedule:
-      - cron: "0 */3 * * *"
+      - cron: "0 */6 * * *"
 jobs:
   update-readme-with-projects:
     name: Checking bots...
@@ -23,8 +23,6 @@ jobs:
           EDIT_IN_REPO: "false"
           UP_TELEGRAM: "✅"
           DOWN_TELEGRAM: "❌"
-          UP_GITHUB: "✅"
-          DOWN_GITHUB: "❌"
           BULLET: "•"
           COMMIT_MESSAGE: "Updated bot status [Bot]"
         id: bot-status
