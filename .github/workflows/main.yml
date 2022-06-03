@@ -17,7 +17,7 @@ jobs:
           API_HASH: ${{ secrets.API_HASH }} # API ID from my.telegram.org
           IDS: ${{ secrets.IDS }} # Message IDs to edit.
           FILE_NAME: "README.md"
-          START_MESSAGE: "My Bot Status"
-          END_MESSAGE: "⚡️ Powered by @Yoga_CIC"
+          START_MESSAGE: "My Bot Status:\n"
+          END_MESSAGE: "\n⚡️ Powered by @Yoga_CIC"
           TIME_ZONE: "Asia/Jakarta"
         id: bot-status
